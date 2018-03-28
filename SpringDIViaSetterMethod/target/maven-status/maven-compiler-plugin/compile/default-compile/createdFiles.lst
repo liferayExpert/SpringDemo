@@ -1,1 +1,4 @@
+com\demo\baseImpl\Shape.class
 com\demo\common\App.class
+com\demo\impl\Rectangle.class
+com\demo\helper\ShapeHelper.class

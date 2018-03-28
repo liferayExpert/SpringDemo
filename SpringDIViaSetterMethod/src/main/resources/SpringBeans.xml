@@ -3,7 +3,9 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-<bean id="Rectangle" class="com.demo.impl.Rectangle">
+<bean id="ShapeHelper" class="com.demo.helper.ShapeHelper">
+<property name="shape" ref="Rectangle"></property>
 </bean>
+<bean id="Rectangle" class="com.demo.impl.Rectangle"></bean>
 
 </beans>
