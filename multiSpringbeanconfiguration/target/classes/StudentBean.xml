@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+ <bean id="StudentInfo" class="com.demo.pojo.StudentInfo">
+<property name="name">
+<value>Bhavesh Murug</value>
+</property>
+<property name="mobileNo">
+<value>8103630666</value>
+</property>
+</bean> 
+</beans>
