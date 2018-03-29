@@ -1,0 +1,71 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean id="PersonDetails" class="com.demo.pojo.PersonDetails">
+
+<!-- java.util.list -->
+  <property name="list">
+
+   <list>
+			<value>1</value>
+			<ref bean="Person"  />
+			<bean class="com.demo.common.Person">
+				<property name="name" value="List Person" />
+				<property name="address" value="Bengaluru" />
+				<property name="age" value="28" />
+				</bean> 
+</list>
+
+</property>
+
+   <!-- java.util.Map -->
+    <property name="map">
+<map>
+<entry key="1" value="Bhavesh Murug"></entry>
+<entry key="2" value="Rahul Vyas"></entry>
+
+
+</map>
+
+    </property>
+
+<!-- java.util.Set -->
+   <property name="set">
+   <set>
+          <value>1</value>
+          <ref bean="Person"/>
+        <bean class="com.demo.common.Person">
+        <property name="name" value="mkyongSet" />
+		<property name="address" value="address" />
+		<property name="age" value="28" />
+
+</bean>
+</set>
+</property>
+
+<!-- java.util.Properties -->
+
+<property name="props">
+
+<props>
+<prop key="owner">bmurug666@gmail.com</prop>
+
+</props>
+
+</property>
+
+</bean>
+
+<bean id="Person" class="com.demo.common.Person">
+		<property name="name" value="Bhavesh" />
+		<property name="address" value="Indore" />
+		<property name="age" value="28" />
+	</bean>
+
+
+
+
+
+</beans>
