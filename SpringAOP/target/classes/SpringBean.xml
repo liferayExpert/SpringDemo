@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+    http://www.springframework.org/schema/aop   
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">  
+    
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>  
+	<bean id="loggingAspect" class="com.demo.aspect.LoggingAspect"></bean>
+	
+	<bean id="subject" class="com.demo.common.Subject" autowire="byName"></bean>
+	
+	<bean id="maths" class="com.demo.model.Maths">
+	<property name="bookName" value="This Is Maths Book"></property>
+	</bean>
+	
+	<bean id="science" class="com.demo.model.Science">
+	<property name="bookName" value="This Is Science Book"></property>
+	</bean>
+	
+	</beans>

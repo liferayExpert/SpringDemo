@@ -1,0 +1,5 @@
+com\demo\common\App.class
+com\demo\model\Science.class
+com\demo\common\Subject.class
+com\demo\aspect\LoggingAspect.class
+com\demo\model\Maths.class
