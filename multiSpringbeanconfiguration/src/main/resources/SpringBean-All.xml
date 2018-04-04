@@ -3,10 +3,9 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-       <import resource="classpaths:SchoolInfo.xml"/>
-      <!--   <import resource="resources/StudentBean.xml"/>
-        <import resource="resources/TeacherInfo.xml"/>
-        <import resource="classpath*:SpringBean-All.xml" /> -->
+      <import resource="classpath*:StudentBean.xml"/>
+        <import resource="classpath*:TeacherBean.xml"/>
+        <import resource="classpath*:SchoolBean.xml" />
 	
 
 </beans>
