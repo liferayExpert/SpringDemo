@@ -1,0 +1,4 @@
+com\demo\common\App.class
+com\demo\aspect\BeforeAdvice.class
+com\demo\aspect\AfterAdvice.class
+com\demo\service\CustomService.class
