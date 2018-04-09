@@ -1,0 +1,4 @@
+com\demo\common\App.class
+com\demo\dao\StudentDao.class
+com\demo\impl\StudentJDBC.class
+com\demo\model\Student.class
